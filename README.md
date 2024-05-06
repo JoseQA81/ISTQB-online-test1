@@ -1,6 +1,6 @@
 # ISTQB ONLINE TEST
 This is an ISTQB Online Exam Web Project.
-[ISTQB ONLINE TEST PROJECT](https://github.com/JoseQA81/ISTQB-online-test1/tree/main)
+[ISTQB ONLINE TEST PROJECT](https://joseqa81.github.io/ISTQB-online-test1/)
 
 ## BUILD WITH
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
