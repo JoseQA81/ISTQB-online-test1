@@ -45,13 +45,38 @@
                 </div>
 
                 <button type="button" class="btn btn-success" onclick="mostrarMensaje()">Send</button>
-                
+
             </div>
             <p id="us1Welcome"></p>
 
             <div id="test">
                 <h2>Test</h2>
                 <p>Istqb Online Test Section</p>
+                <div id="userstory2" class="was-validated">
+                    <h3>Question 1</h3>
+                    <h5>Which of the following statements describe a valid test objective?</h5>
+
+                    <div class="mb-3">
+                        <select id="question1" class="form-select">
+                            <option value="q1answerA">A - To prove that there are no unfixed defects in the system under
+                                test</option>
+                            <option value="q1answerB">B - To prove that there will be no failures after the
+                                implementation of the system into production
+                            </option>
+                            <option value="q1answerC">C - To reduce the risk level of the test object and to build
+                                confidence in the quality level
+                            </option>
+                            <option value="">D - Unanswered</option>
+                        </select>
+                        <div class="valid-feedback">Cool!</div>
+                        <div class="invalid-feedback">Incorrect</div>
+                    </div>
+
+                    <button type="button" class="btn btn-success" onclick="showAnswer()">Check answer</button>
+
+                </div>
+                <p id="us2SeeAnswer"></p>
+
             </div>
             <div id="ranking">
                 <h2>Ranking</h2>
@@ -63,11 +88,11 @@
     </div>
 
 
-        <footer class="mt-5 p-4 bg-light text-center">
-            <p>Footer</p>
-        </footer>
+    <footer class="mt-5 p-4 bg-light text-center">
+        <p>Footer</p>
+    </footer>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
