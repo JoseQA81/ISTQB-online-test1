@@ -6,4 +6,3 @@ function mostrarMensaje() {
     document.getElementById("us1Welcome").innerText = mensaje;
     
 }
-
