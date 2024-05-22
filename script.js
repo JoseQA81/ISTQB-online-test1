@@ -1,3 +1,9 @@
+//CREO UNA FUNCIÓN PARA IMPRIMIR
+function imprimir(mensaje,id){
+    let elemento = document.getElementById(id);
+    elemento.innerText = mensaje;
+}
+
 //USER STORY - WELCOME MESSAGE
 function mostrarMensaje() {
     let nombre = document.getElementById("josWelcome").value;
