@@ -35,7 +35,7 @@
         <div id="welcome">
             <h2>Welcome</h2>
             <p>ISTQB Online Test</p>
-            <div id="userstory1" class="was-validated">
+            <form id="userstory1" class="was-validated">
 
                 <div class="mb-3">
                     <input type="text" id="josWelcome" placeholder="Enter your name" required maxlength="11"
@@ -46,13 +46,13 @@
 
                 <button type="button" class="btn btn-success" onclick="mostrarMensaje()">Send</button>
 
-            </div>
+            </form>
             <p id="us1Welcome"></p>
 
             <div id="test">
                 <h2>Test</h2>
                 <p>Istqb Online Test Section</p>
-                <div id="userstory2" class="was-validated">
+                <form id="userstory2" class="was-validated">
                     <h3>Question 1</h3>
                     <h5>Which of the following statements describe a valid test objective?</h5>
 
@@ -72,10 +72,12 @@
 
                     </div>
 
-                    <button type="button" class="btn btn-success" onclick="showAnswer()">Check answer</button>
+                    <button type="button" class="btn btn-info" onclick="showAnswer()">Show answer</button>
+                    <button type="button" class="btn btn-success" onclick="seeScore()">Check Answer</button>
 
-                </div>
+                </form>
                 <p id="us2SeeAnswer"></p>
+                <p id="us2SeeScore"></p>
 
             </div>
             <div id="ranking">
