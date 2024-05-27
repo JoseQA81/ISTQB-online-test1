@@ -21,7 +21,7 @@ function showAnswer() {
     imprimir(mensaje, "us2SeeAnswer");
 }
 
-//USER STORY SEE SCORE
+//USER STORY - SEE SCORE
 const correctAnswer = "q1answerB";
 let score = 0;
 
@@ -43,3 +43,7 @@ function seeScore() {
     }
     imprimir(mensaje, "us2SeeScore");
 }
+
+//USER STORY -  10 QUESTIONS
+const allCorrectAnswers = ["q1answerB", "q2answerA", "q3answerA", "q4answerC" , "q5answerC",
+ "q6answerB", "q7answerA" , "q8answerC", "q9answerB", "q10answerB"];
