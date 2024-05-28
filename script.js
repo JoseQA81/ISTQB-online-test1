@@ -18,7 +18,7 @@ function showAnswer() {
     const answer = "B";
 
     const mensaje = "The correct answer is " + answer;
-    imprimir(mensaje, "us2SeeAnswer");
+    imprimir(mensaje, "us2SeeAnswer1");
 }
 
 //USER STORY - SEE SCORE
@@ -41,9 +41,8 @@ function seeScore() {
         score = -1;
         mensaje = "you have lost '1' point";
     }
-    imprimir(mensaje, "us2SeeScore");
+    imprimir(mensaje, "us2SeeScore1");
 }
 
 //USER STORY -  10 QUESTIONS
-const allCorrectAnswers = ["q1answerB", "q2answerA", "q3answerA", "q4answerC" , "q5answerC",
- "q6answerB", "q7answerA" , "q8answerC", "q9answerB", "q10answerB"];
+const allCorrectAnswers = ["B", "A", "A", "C" , "C", "B", "A" , "C", "B", "B"];
