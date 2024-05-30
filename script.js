@@ -1,3 +1,6 @@
+//USER STORY -  10 QUESTIONS - ARRAY WITH ALL CORRECT ANSWER
+const allCorrectAnswers = ["B", "A", "A", "C", "C", "B", "A", "C", "B", "B"];
+
 //CREO UNA FUNCIÓN PARA IMPRIMIR
 function imprimir(mensaje, id) {
     let elemento = document.getElementById(id);
@@ -14,35 +17,32 @@ function mostrarMensaje() {
 }
 
 //USER STORY - SEE THE ANSWER
-function showAnswer() {
-    const answer = "B";
+function showAnswer(questionNumber) {
+    const correctAnswer = allCorrectAnswers[questionNumber - 1];
+    const mensaje = "The correct answer is " + correctAnswer;
 
-    const mensaje = "The correct answer is " + answer;
-    imprimir(mensaje, "us2SeeAnswer1");
+    imprimir(mensaje, "us2SeeAnswer" + questionNumber);
 }
 
 //USER STORY - SEE SCORE
-const correctAnswer = "q1answerB";
-let score = 0;
-
-function seeScore() {
-    let questionOne = document.getElementById("question1").value;
+function seeScore(questionNumber) {
+    let selectedQuestion = document.getElementById("question" + questionNumber).value;
+    const correctAnswer = allCorrectAnswers[questionNumber - 1];
+    let score = 0;
     let mensaje = "";
 
-    if (questionOne === "") {
+    if (selectedQuestion === "") {
         score = 0;
         mensaje = "Unanswered. You have earned '0' points";
     }
-    else if (questionOne === correctAnswer) {
+    else if (selectedQuestion === correctAnswer) {
         score = 2;
         mensaje = "You have earned '2' points"
     }
     else {
         score = -1;
-        mensaje = "you have lost '1' point";
+        mensaje = "you have '1' point less";
     }
-    imprimir(mensaje, "us2SeeScore1");
+    imprimir(mensaje, "us2SeeScore" + questionNumber);
 }
 
-//USER STORY -  10 QUESTIONS
-const allCorrectAnswers = ["B", "A", "A", "C" , "C", "B", "A" , "C", "B", "B"];
