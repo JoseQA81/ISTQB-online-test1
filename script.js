@@ -33,16 +33,15 @@ function seeScore(questionNumber) {
 
     if (selectedQuestion === "") {
         score = 0;
-        mensaje = "Unanswered. You have earned '0' points";
+        mensaje = "Unanswered. You have earned: " + score +  " points";
     }
     else if (selectedQuestion === correctAnswer) {
         score = 2;
-        mensaje = "You have earned '2' points"
+        mensaje = "CORRECT! You have earned: " + score +  " points";
     }
     else {
         score = -1;
-        mensaje = "you have '1' point less";
+        mensaje = "INCORRECT! You have earned: " + score +  " points";
     }
     imprimir(mensaje, "us2SeeScore" + questionNumber);
 }
-
