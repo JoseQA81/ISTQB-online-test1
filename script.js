@@ -19,8 +19,18 @@ function mostrarMensaje() {
 //USER STORY - SEE THE ANSWER
 function showAnswer(questionNumber) {
     const correctAnswer = allCorrectAnswers[questionNumber - 1];
-    const mensaje = "The correct answer is " + correctAnswer;
+    const selectedAnswer = document.getElementById("question" + questionNumber).value;
 
+    let mensaje;
+    if (selectedAnswer === "") {
+        mensaje = "The answer is unanswered";
+    }
+    else if (selectedAnswer === correctAnswer) {
+        mensaje = "The answer is correct";
+    }
+    else {
+        mensaje = "The answer is incorrect";
+    }
     imprimir(mensaje, "us2SeeAnswer" + questionNumber);
 }
 
@@ -33,15 +43,15 @@ function seeScore(questionNumber) {
 
     if (selectedQuestion === "") {
         score = 0;
-        mensaje = "Unanswered. You have earned: " + score +  " points";
+        mensaje = "Unanswered. You have earned: " + score + " points";
     }
     else if (selectedQuestion === correctAnswer) {
         score = 2;
-        mensaje = "CORRECT! You have earned: " + score +  " points";
+        mensaje = "CORRECT! You have earned: " + score + " points";
     }
     else {
         score = -1;
-        mensaje = "INCORRECT! You have earned: " + score +  " points";
+        mensaje = "INCORRECT! You have earned: " + score + " points";
     }
     imprimir(mensaje, "us2SeeScore" + questionNumber);
 }
