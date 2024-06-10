@@ -56,7 +56,7 @@ function seeScore(questionNumber) {
     imprimir(mensaje, "us2SeeScore" + questionNumber);
 }
 
-//USER STORY - CALCULATE THE FINAL SCORE
+//USER STORY - CALCULATE THE FINAL SCORE - RESTART TEST 
 function seeFinalScore() {
     let finalScore = 0;
     let mensaje = "";
@@ -74,4 +74,16 @@ function seeFinalScore() {
 
     mensaje = "Your final score is: " + finalScore + " points";
     imprimir(mensaje, "finalScore");
+
+    setTimeout(restartTest, 4000); // Wait a moment before restarting the test to allow the message to be displayed.
+}
+
+//RESTART TEST
+function restartTest() {
+    for (let i = 1; i <= allCorrectAnswers.length; i++) {
+        document.getElementById("question" + i).value = "";
+        document.getElementById("us2SeeAnswer" + i).innerText = "";
+        document.getElementById("us2SeeScore" + i).innerText = "";
+    }
+    document.getElementById("finalScore").innerText = "";
 }
