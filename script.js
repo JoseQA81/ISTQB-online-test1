@@ -55,3 +55,23 @@ function seeScore(questionNumber) {
     }
     imprimir(mensaje, "us2SeeScore" + questionNumber);
 }
+
+//USER STORY - CALCULATE THE FINAL SCORE
+function seeFinalScore() {
+    let finalScore = 0;
+    let mensaje = "";
+
+    for (let i = 1; i <= allCorrectAnswers.length; i++) {
+        let studentAnswer = document.getElementById("question" + i).value;
+
+        if (studentAnswer === allCorrectAnswers[i - 1]) {
+            finalScore += 2;
+        }
+        else if (studentAnswer !== "") {
+            finalScore -= 1; // Each incorrect answer subtracts 1 point.
+        }
+    }
+
+    mensaje = "Your final score is: " + finalScore + " points";
+    imprimir(mensaje, "finalScore");
+}
