@@ -23,7 +23,7 @@ function showAnswer(questionNumber) {
 
     let mensaje;
     if (selectedAnswer === "") {
-        mensaje = "The answer is unanswered";
+        mensaje = "Unanswered";
     }
     else if (selectedAnswer === correctAnswer) {
         mensaje = "The answer is correct";
