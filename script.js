@@ -75,7 +75,7 @@ function seeFinalScore() {
     mensaje = "Your final score is: " + finalScore + " points";
     imprimir(mensaje, "finalScore");
 
-    setTimeout(restartTest, 4000); // Wait a moment before restarting the test to allow the message to be displayed.
+    setTimeout(restartTest, 5000); // Wait a moment before restarting the test to allow the message to be displayed.
 }
 
 //RESTART TEST
