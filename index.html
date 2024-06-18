@@ -44,7 +44,7 @@
                     <div class="invalid-feedback">The name cannot have more than 11 characters</div>
                 </div>
 
-                <button type="button" class="btn btn-success" onclick="mostrarMensaje()">Send</button>
+                <button type="button" class="btn btn-success" onclick="mostrarMensaje()">Send & start your exam</button>
 
             </form>
             <p id="us1Welcome"></p>
@@ -380,10 +380,16 @@
 
 
             </div>
+
+
             <div id="ranking">
                 <h2>Ranking</h2>
-                <p>Student Ranking</p>
+                <p>Student Ranking:</p>
+
+                <button type="button" class="btn btn-danger" onclick="seeRanking()">See Ranking</button>
+                <p id="rankingResult"></p>
             </div>
+
 
         </div>
 
