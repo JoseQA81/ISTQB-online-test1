@@ -32,12 +32,8 @@ function showAnswer(questionNumber) {
     let mensaje;
     if (selectedAnswer === "") {
         mensaje = "Unanswered";
-    }
-    else if (selectedAnswer === correctAnswer) {
-        mensaje = "The answer is correct";
-    }
-    else {
-        mensaje = "The answer is incorrect";
+    } else {
+        mensaje = "Correct answer is: " + correctAnswer;
     }
     imprimir(mensaje, "us2SeeAnswer" + questionNumber);
 }
