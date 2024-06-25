@@ -12,10 +12,15 @@ function imprimir(mensaje, id) {
 
 //USER STORY - WELCOME MESSAGE
 function mostrarMensaje() {
-    let name = document.getElementById("josWelcome").value;
+    let name = document.getElementById("josWelcome").value.trim(); // Utiliza trim() para eliminar espacios en blanco al inicio y al final
 
-    let mensaje = "Welcome " + name + " to your ISTQB exam, good luck!";
+    if (name === "") {
+        imprimir("The name cannot be empty", "us1Welcome");
+    }
+    else {
+        let mensaje = "Welcome " + name + " to your ISTQB exam, good luck!";
     imprimir(mensaje, "us1Welcome");
+    }
 
 }
 
