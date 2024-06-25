@@ -38,16 +38,16 @@
             <form id="userstory1" class="was-validated">
 
                 <div class="mb-3">
-                    <input type="text" id="josWelcome" placeholder="Enter your name" required maxlength="11"
+                    <input type="text" id="josWelcome" data-cy="input-welcome-name" placeholder="Enter your name" required maxlength="11"
                         class="form-control">
-                    <div class="valid-feedback">The entered name is correct</div>
-                    <div class="invalid-feedback">The name cannot have more than 11 characters</div>
+                    <div class="valid-feedback" data-cy="success-welcome-message">The entered name is correct</div>
+                    <div class="invalid-feedback" data-cy="error-welcome-message">The name cannot have more than 11 characters</div>
                 </div>
 
-                <button type="button" class="btn btn-success" onclick="mostrarMensaje()">Send & start your exam</button>
+                <button type="button" class="btn btn-success" data-cy="button-start" onclick="mostrarMensaje()">Send & start your exam</button>
 
             </form>
-            <p id="us1Welcome"></p>
+            <p id="us1Welcome" data-cy="welcome-message"></p>
 
             <div id="test">
                 <h2>Test</h2>
