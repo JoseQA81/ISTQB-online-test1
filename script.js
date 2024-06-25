@@ -14,7 +14,7 @@ function imprimir(mensaje, id) {
 function mostrarMensaje() {
     let name = document.getElementById("josWelcome").value;
 
-    let mensaje = "Welcome " + name + " to your ISTQB exam, " + " good luck! ";
+    let mensaje = "Welcome " + name + " to your ISTQB exam, " + " good luck!";
     imprimir(mensaje, "us1Welcome");
 
 }
