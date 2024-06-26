@@ -4,7 +4,7 @@ const allCorrectAnswers = ["B", "A", "A", "C", "C", "B", "A", "C", "B", "B"];
 // ARRAY TO SAVE THE STUDENTS
 let students = [];
 
-//CREO UNA FUNCIÓN PARA IMPRIMIR
+// I CREATE A FUNCTION TO PRINT
 function imprimir(mensaje, id) {
     let elemento = document.getElementById(id);
     elemento.innerText = mensaje;
