@@ -79,8 +79,7 @@ function seeFinalScore() {
     mensaje = "Your final score is: " + finalScore + " points";
     imprimir(mensaje, "finalScore");
 
-    let studentName = document.getElementById("josWelcome").value;
-    addStudent(studentName, finalScore); //ADD STUDENT TO THE RANKING
+    addStudent(finalScore);
 
     setTimeout(restartTest, 5000); // Wait a moment before restarting the test to allow the message to be displayed.
 }
@@ -96,10 +95,11 @@ function restartTest() {
 }
 
 //USER STORY - RANKING
-function addStudent(name, score) {
+function addStudent(score) {
+    let studentName = document.getElementById("josWelcome").value;
 
     let newStudent = {
-        name: name,
+        name: studentName,
         score: score
     };
 
