@@ -19,7 +19,7 @@ function mostrarMensaje() {
     }
     else {
         let mensaje = "Welcome " + name + " to your ISTQB exam, good luck!";
-    imprimir(mensaje, "us1Welcome");
+        imprimir(mensaje, "us1Welcome");
     }
 
 }
@@ -92,6 +92,8 @@ function restartTest() {
         document.getElementById("us2SeeScore" + i).innerText = "";
     }
     document.getElementById("finalScore").innerText = "";
+    document.getElementById("josWelcome").value = ""; // Resetea el nombre de bienvenida
+    document.getElementById("us1Welcome").innerText = ""; // También borra el mensaje de bienvenida
 }
 
 //USER STORY - RANKING
